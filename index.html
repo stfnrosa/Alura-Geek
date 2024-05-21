@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
+    <header class="cabecalho">
+        <img src="./assets/imagens/coracao.png" alt="" srcset="">
+        <h1 class="cabecalho__titulo">AluraGeek</h1>
+    </header>
+    <main class="container">
+        <div class="container__mostrar">
+            <h2 class="container__mostrar__titulo">MEUS PRODUTOS:</h2>
+            <ul class="container__mostrar__produtos" alt="produtos" data-lista>
+                <li class="produto__item">
+                    <img class="produto-imagem" src="./assets/imagens/image.png" alt="">
+                    <p class="produto-nome">Game Boy Classic</p>
+                    <span class="produto-remover">
+                        <p class="produto-valor">$ 60,00</p>
+                        <img src="./assets/imagens/excluir.png" alt="Remover">
+                    </span>
+                    
+                </li>
+            </ul>
+        </div>
+        <div  class="container__cadastrar">
+            <form class="container__cadastrar__formulario" data-formulario>
+                <h2 class="formulario__titulo">CADASTRAR PRODUTOS!</h3>
+                    <div class="formulario__campo">
+                        <input name="nome" class="campo__escrita" required placeholder="nome..."
+                            id='nome' data-nome />
+                    </div>
     
+    
+                    <div class="formulario__campo">
+                        <input name="valor" class="campo__escrita" required placeholder="valor..."
+                            id='valor' data-valor />
+                    </div>
+    
+                    <div class="formulario__campo">
+                        <input name="imagem" class="campo__escrita" required placeholder="imagem..."
+                            id='imagem' data-imagem/>
+                    </div>
+    
+                    <input value="Guardar" class="formulario__botao" id="guardar" type="submit">
+                    <input value="Limpar" class="formulario__botao" id="limpar" type="submit">
+            </form>
+            
+            
+        </div>
+
+    </main>
+    <footer class="rodape">
+        <div class="rodape__destaque">
+            <img src="./assets/imagens/coracao.png" alt="" srcset="">
+            <h1 class="rodape_destaque__titulo">AluraGeek</h1>
+        </div>
+        <div  class="rodape__descricao">
+            <p id="desenvolvedor">DESENVOLVIDO POR ESTEFANI</p>
+            <p id="colaborador">ALURA LATAM - 202X</p>
+        </div>
+    </footer>    
 </body>
 </html>
