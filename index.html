@@ -20,15 +20,15 @@
                     <p class="produto-nome">Game Boy Classic</p>
                     <span class="produto-remover">
                         <p class="produto-valor">$ 60,00</p>
-                        <img src="./assets/imagens/excluir.png" alt="Remover">
+                        <img src="./assets/imagens/excluir.png" alt="Remover Produto" data-delete>
                     </span>
-                    
                 </li>
+                
             </ul>
         </div>
         <div  class="container__cadastrar">
             <form class="container__cadastrar__formulario" data-formulario>
-                <h2 class="formulario__titulo">CADASTRAR PRODUTOS!</h3>
+                <h2 class="formulario__titulo">ADICIONAR<br> PRODUTO!</h3>
                     <div class="formulario__campo">
                         <input name="nome" class="campo__escrita" required placeholder="nome..."
                             id='nome' data-nome />
@@ -44,9 +44,10 @@
                         <input name="imagem" class="campo__escrita" required placeholder="imagem..."
                             id='imagem' data-imagem/>
                     </div>
-    
-                    <input value="Guardar" class="formulario__botao" id="guardar" type="submit">
-                    <input value="Limpar" class="formulario__botao" id="limpar" type="submit">
+                    <div class="formulario__botao">    
+                        <input value="Guardar" class="botao" id="guardar" type="submit">
+                        <input value="Limpar" class="botao" id="limpar" type="submit">
+                    </div>
             </form>
             
             
@@ -62,6 +63,7 @@
             <p id="desenvolvedor">DESENVOLVIDO POR ESTEFANI</p>
             <p id="colaborador">ALURA LATAM - 202X</p>
         </div>
-    </footer>    
+    </footer> 
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

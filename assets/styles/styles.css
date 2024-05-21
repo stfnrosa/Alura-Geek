@@ -18,42 +18,58 @@
 body {
     background-color: var(--branco);
     font-family: var(--fonte-principal);
+    box-sizing: border-box;
 }
 
 .container{
     padding: 60px 40px;
     display: flex;
     gap: 70px;
+    justify-content: space-around;
 }
 
-.container__mostrar__titulo{
+.container__mostrar__titulo,
+.formulario__titulo{
+    text-align: center;
     font-size: 24px;
-    padding-top: 40px;
-}
-
-.container__mostrar__produtos{
     padding: 40px;
 }
 
-.container__mostrar__produtos{    
-    display: flex;
-    flex-wrap: wrap;
+
+.container__mostrar__produtos{   
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    z-index: 1;
+    box-shadow: -12px 10px 6px 0px #00000025;
+    max-height: 971px;
+    overflow-y: scroll;
 }
 
-.produto__item {
-    height: 258px;
-    width: 196px;
-    background-color: var(--roxo-escuro);
-    padding: 10px;
-    border: 3px solid var(--preto);
+.container__mostrar__produtos::-webkit-scrollbar{
+    width: 10px;
+}
+
+.container__mostrar__produtos::-webkit-scrollbar-thumb{
+    background-color: #d6d6d6;
     border-radius: 10px;
+}
+
+
+.produto__item {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    background-color: var(--roxo-escuro);
+    padding: 10px;
+    border: 3px solid var(--preto);
+    box-shadow: -5px 6px 3px 0px #00000025;
+    border-radius: 10px;
     font-family: var(--fonte-secundaria);
     color: var(--branco);
+    margin-bottom: 4rem;
+    width: auto;
 }
 
 .produto-imagem{
@@ -76,3 +92,49 @@ body {
     justify-content: space-between;
 }
 
+.container__cadastrar{
+    padding: 0 40px;
+}
+
+.campo__escrita{
+    width: 392px;
+    border: 3px solid var(--azul);
+    border-radius: 30px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    line-height: 26px;
+    padding: 1rem;   
+    margin-bottom: 40px;
+}
+
+.campo__escrita::placeholder{
+    font-family: var(--fonte-secundaria);
+    color: var(--azul);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.formulario__botao{
+    display: flex;
+    gap:13px;
+}
+
+.botao{
+    width: 100%;
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    font-weight: 500;
+    border: 3px solid var(--azul);
+    border-radius: 15px;
+    padding: 15px 65px;
+    line-height: 25px;
+}
+
+#guardar{
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+#limpar{
+    color: var(--azul);
+}
