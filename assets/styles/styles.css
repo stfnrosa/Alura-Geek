@@ -28,8 +28,7 @@ body {
     justify-content: space-around;
 }
 
-.container__mostrar__titulo,
-.formulario__titulo{
+.container__mostrar__titulo{
     text-align: center;
     font-size: 24px;
     padding: 40px;
@@ -96,18 +95,35 @@ body {
 }
 
 .container__cadastrar{
-    padding: 0 40px;
+    padding: 40px;
+}
+
+.container__cadastrar__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.formulario__titulo{
+    text-align: center;
+    font-size: 24px;
 }
 
 .campo__escrita{
-    width: 392px;
+    box-sizing: border-box;
+    width: 100%;
     border: 3px solid var(--azul);
     border-radius: 30px;
     font-family: 'IBM Plex Mono';
     font-style: normal;
     line-height: 26px;
     padding: 1rem;   
-    margin-bottom: 40px;
+}
+
+.campo__escrita:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 .campo__escrita::placeholder{
@@ -129,8 +145,8 @@ body {
     font-weight: 500;
     border: 3px solid var(--azul);
     border-radius: 15px;
-    padding: 15px 65px;
     line-height: 25px;
+    padding: 15px 65px;
 }
 
 #guardar{
@@ -139,5 +155,6 @@ body {
 }
 
 #limpar{
+    background-color: var(--branco);
     color: var(--azul);
 }
