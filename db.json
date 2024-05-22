@@ -1,0 +1,55 @@
+{
+  "produtos": [
+    {
+      "nome": "Produto A",
+      "imagem": "https://bagy.com.br/blog/wp-content/uploads/2022/03/loja-geek-1.jpg",
+      "valor": 55,
+      "id": 1
+    },
+    {
+      "nome": "Caneca Mario",
+      "valor": "60,00",
+      "id": 2
+    },
+    {
+      "imagem": "Caneca Mario",
+      "valor": "60,00",
+      "id": 3
+    },
+    {
+      "nome": "Caneca Mario",
+      "valor": "60,00",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "nome": "Caneca Mario",
+      "valor": "60,00",
+      "imagem": "https://i.ytimg.com/vi/slmtdlWNwcE/sddefault.jpg",
+      "id": 7
+    },
+    {
+      "nome": "Caneca Mario",
+      "valor": "60,00",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg",
+      "id": 8
+    },
+    {
+      "nome": "Caneca Mario",
+      "valor": "60,00",
+      "imagem": "https://i.ytimg.com/vi/slmtdlWNwcE/sddefault.jpg",
+      "id": 9
+    },
+    {
+      "nome": "Caneca Mario",
+      "valor": "60,00",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg",
+      "id": 10
+    }
+  ]
+}

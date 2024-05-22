@@ -56,7 +56,7 @@ body {
 }
 
 
-.produto__item {
+.produto__card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -73,6 +73,9 @@ body {
 }
 
 .produto-imagem{
+    width: 176px;
+    height: 174px;
+    background-size: cover;
     border: 3px solid var(--preto);
     border-radius: 10px;
 }
@@ -86,7 +89,7 @@ body {
     font-weight: 600; 
 }
 
-.produto-remover{
+.produto-delete{
     display: flex;
     align-items: center;
     justify-content: space-between;
