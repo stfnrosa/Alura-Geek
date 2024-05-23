@@ -43,27 +43,51 @@
       "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg"
     },
     {
-      "id": 1716494028461,
-      "nome": "Caneca Mario",
-      "valor": "55",
-      "imagem": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExMSFRIXGBcXFRYVFxgVFxgWFRgaGBoVFRgYHSggGBolHRgYIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lICUtLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIEBQYHAwj/xABKEAACAQMCAgcDBwgJAgYDAAABAgMABBESIQUxBgcTIkFRYRRxgTJCUpGhsdEXI2JykrPBwggVNXOCk+Hi8EOyMzSDoqPxFlN0/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAECAwQFBgf/xAA3EQACAQIEAwQIBQUBAQAAAAAAAQIDEQQSITETQVEFYbHBIjIzUnGBodEGcpHh8BQjQoLxopL/2gAMAwEAAhEDEQA/AOG0AoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQF9XdZHPcUshcUshcUshcUshcUshcUshcUshcUshcUshcUshcUshcUshcUshcUshcmlkLjFLC5Ok+VMpFyNNLE3J0HyqcpFyMVFhcaaWFydNLE3IxSwuMUsLjTSwuTppYi40mmUm5BFLC5FLIXFLIXFLIXFLIXFCBQCgFAKAUAoBQCgFAKAUAoBQFWmpsCrRipsRcAHnRdQMnzpqNBg01BGo0uxYgEk1HMkrIPPNTZ7kEDP8Az6qEkEGmoGDQEgGiTBUAanUgg586O40Nt6r7eN7qUyxRTKlrcSBJUEia4wCpKn/m9Y1b2NaZd"
-    },
-    {
-      "id": 1716494649430,
-      "nome": "Estefani Marques R",
-      "valor": {},
-      "imagem": "https://i.ytimg.com/vi/slmtdlWNwcE/sddefault.jpg"
-    },
-    {
-      "id": 1716495008626,
-      "nome": "Caneca Mario",
-      "valor": {},
-      "imagem": "https://bagy.com.br/blog/wp-content/uploads/2022/03/loja-geek-1.jpg"
-    },
-    {
       "id": 1716495043297,
       "nome": "Caneca Mario",
       "valor": "55",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg"
+    },
+    {
+      "id": 1716495740625,
+      "nome": "Caneca Mario",
+      "valor": 55,
+      "imagem": "https://bagy.com.br/blog/wp-content/uploads/2022/03/loja-geek-1.jpg"
+    },
+    {
+      "id": 1716495747985,
+      "nome": "Caneca Mario",
+      "valor": 55,
+      "imagem": "https://casa.abril.com.br/wp-content/uploads/2017/05/a-almofada-de-pipoca-relax-custa-r-12990-na-uatt.jpg?quality=95&strip=info&w=720&crop=1"
+    },
+    {
+      "id": 1716495803543,
+      "nome": "Caneca Mario",
+      "valor": "R$ 55,00",
+      "imagem": "https://bagy.com.br/blog/wp-content/uploads/2022/03/loja-geek-1.jpg"
+    },
+    {
+      "id": 1716495968999,
+      "nome": "Caneca Mario",
+      "valor": "R$ 55,00",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg"
+    },
+    {
+      "id": 1716496020774,
+      "nome": "Estefani Marques R",
+      "valor": 55,
+      "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg"
+    },
+    {
+      "id": 1716496064606,
+      "nome": "Caneca Mario",
+      "valor": "R$ 55,00",
+      "imagem": "https://bagy.com.br/blog/wp-content/uploads/2022/03/loja-geek-1.jpg"
+    },
+    {
+      "id": 1716496075830,
+      "nome": "Caneca Mario",
+      "valor": "R$ 60,00",
       "imagem": "https://images.tcdn.com.br/img/img_prod/460977/caneca_3d_geek_mario_mario_bros_70928_1_20201211171849.jpeg"
     }
   ]

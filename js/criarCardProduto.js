@@ -1,4 +1,5 @@
 import { conectaApi } from "./conectaApi.js";
+import verificaValor from "./verificaValor.js";
 
 const formulario = document.querySelector("[data-formulario]");
 
@@ -6,8 +7,9 @@ async function criarCardProduto(evento) {
     evento.preventDefault();
 
     const nome = document.querySelector("[data-nome]").value;
-    const valor = document.querySelector("[data-valor]").value;
+    const valorCampo = document.querySelector("[data-valor]");
     const imagem = document.querySelector("[data-imagem]").value;
+    const valor = verificaValor(valorCampo);
 
     const id = Date.now();
 

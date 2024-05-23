@@ -11,7 +11,7 @@ function constroiCard(id, nome, valor, imagem) {
         <img class="produto-imagem" src="${imagem}" alt="">
         <p class="produto-nome">${nome}</p>
         <span class="produto-delete">
-            <p class="produto-valor">$ ${valor}</p>
+            <p class="produto-valor">${valor}</p>
             <input type="image" src="./assets/imagens/excluir.png" alt="removerr Produto" data-delete data-id="${id}">
         </span>`;
     
