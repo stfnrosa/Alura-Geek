@@ -11,6 +11,7 @@
   <div align="center">
     <img src="teste.png" alt="badge">
 </div>
+
 ## Informações Adicionais:
 O projeto foi elaborado durante o curso de formação front-end da Alura, oferecido pela Oracle através do programa Oracle One.
 Concluí o curso com sucesso e obtive o badge de conclusão: 
