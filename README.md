@@ -8,7 +8,7 @@
 - Cadastro de Produto: Inserindo o nome do produto, o valor e um link de imagem, você consegue criar um registro deste produto através do JavaScript e da função criarCardProduto, que será exibido no container "Meus produtos".
 - Remover Produto: Pressionando o ícone de lixeira presente no card de cada produto, será possível que seu registro seja removido da API, através do JavaScript e da função removerProduto.
 - Responsividade: Além disso, através de media queries no CSS, foi possível criar uma versão mobile.
-- <div align="center">
+  <div align="center">
     <img src="teste.png" alt="badge">
 </div>
 ## Informações Adicionais:
