@@ -145,6 +145,12 @@ body {
     gap:13px;
 }
 
+.mensagem-erro {
+    color: red;
+    font-size: 15px;
+    font-family: var(--fonte-secundaria);
+}
+
 .botao{
     width: 100%;
     font-family: var(--fonte-secundaria);

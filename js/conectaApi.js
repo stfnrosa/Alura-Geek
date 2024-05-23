@@ -45,14 +45,6 @@ async function atualizaProduto(id, newData) {
     return response;
 }
 
-// async function deleteProduto(id) {
-//     //realiza uma requisiçaõ delete
-//     const response = await fetch(`http://localhost:3000/produtos/${id}`, {
-//         method: 'DELETE',
-//     });
-//     return response;
-// }
-
 //exporta funções definidas
 export const conectaApi = {
     listaProdutos,

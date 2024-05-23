@@ -22,19 +22,20 @@
             <form class="container__cadastrar__formulario" data-formulario>
                 <h2 class="formulario__titulo">ADICIONAR<br> PRODUTO!</h3>
                     <div class="formulario__campo">
-                        <input name="nome" class="campo__escrita" required placeholder="nome..."
-                            maxlength="18" minlength="3" id='nome' data-nome />
+                        <input name="nome" type="text" class="campo__escrita" placeholder="nome..."
+                            maxlength="18" minlength="3" id='nome' data-nome required/>
+                            <span class="mensagem-erro"></span>
+                    </div>        
+                    <div class="formulario__campo">
+                        <input name="valor" class="campo__escrita" placeholder="valor..."
+                            id='valor' data-valor required/>
+                            <span class="mensagem-erro"></span>
                     </div>
     
-    
                     <div class="formulario__campo">
-                        <input name="valor" class="campo__escrita" required placeholder="valor..."
-                            id='valor' data-valor />
-                    </div>
-    
-                    <div class="formulario__campo">
-                        <input name="imagem" class="campo__escrita" required placeholder="imagem..."
-                            id='imagem' data-imagem/>
+                        <input name="imagem" class="campo__escrita" placeholder="imagem..."
+                            id='imagem' minlength="3" data-imagem required/>
+                            <span class="mensagem-erro"></span>
                     </div>
                     <div class="formulario__botao">    
                         <input value="Guardar" class="botao" id="guardar" type="submit">
@@ -58,5 +59,6 @@
     </footer> 
     <script type="module" src="./js/mostrarCardProduto.js"></script>
     <script type="module" src="./js/criarCardProduto.js"></script>
+    <script type="module" src="./js/tratandoErros.js"></script>
 </body>
 </html>
