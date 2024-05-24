@@ -1,18 +1,21 @@
 {
-    "functions": {
-      "api/server.js": {
-        "includeFiles": "db.json"
-      }
+  "functions": {
+    "api/server.js": {
+      "includeFiles": "db.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/server.js"
     },
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "/api/server.js"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "https://alura-geek-inky-sigma.vercel.app/"
-      }
-    ]
-  }
-  
+    {
+      "source": "/(.*)",
+      "destination": "https://alura-geek-inky-sigma.vercel.app/"
+    },
+    {
+      "source": "/produtos/(.*)",
+      "destination": "api/server.js"
+    }
+  ]
+}
