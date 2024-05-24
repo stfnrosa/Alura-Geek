@@ -1,5 +1,5 @@
 // const host = "http://localhost:3000";
-const host = "https://alura-geek-inky-sigma.vercel.app"
+const host = "https://api-produtos-seven.vercel.app"
 
 // Função usada para listar os produtos da API
 async function listaProdutos() {
