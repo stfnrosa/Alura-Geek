@@ -9,7 +9,7 @@ async function listaProdutos() {
 }
 
 async function criarProduto(id, nome, valor, imagem) {
-    const conexao = await fetch(`${host}/produtos`, { // Corrigido o template literal
+    const conexao = await fetch(`${host}/produtos`, { 
         method: "POST",
         headers: {
             "Content-type": "application/json"
