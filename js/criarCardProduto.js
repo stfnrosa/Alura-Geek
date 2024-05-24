@@ -20,12 +20,9 @@ function criarCardProduto(evento) {
         }else {
             lista.innerHTML = ``;
             produtos.reverse();
-             produtos.forEach(elemento=> lista.appendChil(constroiCard(novoProdutoid, novoProduto.nome,novoProduto.valor,novoProduto.imagem)))
+             produtos.forEach(elemento => lista.appendChild(constroiCard(novoProduto.id, novoProduto.nome,novoProduto.valor,novoProduto.imagem)))
         }
     })
-    } catch (error) {
-        console.error("Erro ao criar card do produto:", error);
-    }
 }
 
 formulario.addEventListener("submit", criarCardProduto);
