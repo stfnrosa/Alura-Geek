@@ -1,5 +1,4 @@
 import { conectaApi } from "./conectaApi.js";
-import { removerProduto } from "./removerProduto.js";
 
 const lista = document.querySelector("[data-lista]");
 
