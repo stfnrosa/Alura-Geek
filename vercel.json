@@ -11,7 +11,7 @@
       },
       {
         "source": "/(.*)",
-        "destination": "https://alura-geek-flax.vercel.app/$1"
+        "destination": "https://alura-geek-inky-sigma.vercel.app/"
       }
     ]
   }

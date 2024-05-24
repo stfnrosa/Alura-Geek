@@ -1,4 +1,4 @@
-const host = "https://alura-geek-flax.vercel.app"
+const host = "https://alura-geek-inky-sigma.vercel.app"
 
 //função usada para listar os produtos da API
 async function listaProdutos() {
