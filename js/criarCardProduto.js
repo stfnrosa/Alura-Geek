@@ -11,7 +11,8 @@ async function criarCardProduto(evento) {
     const imagem = document.querySelector("[data-imagem]").value;
     const valor = verificaValor(valorCampo);
 
-    const id = Date.now();
+    const ultimoId = produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) : 0;
+    const novoId = ultimoId + 1;
 
     try {
         const novoProduto = await conectaApi.criarProduto(id, nome, valor, imagem);
@@ -22,6 +23,5 @@ async function criarCardProduto(evento) {
 }
 
 formulario.addEventListener("submit", criarCardProduto);
-
 
 
