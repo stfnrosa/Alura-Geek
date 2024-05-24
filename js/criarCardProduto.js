@@ -14,16 +14,15 @@ function criarCardProduto(evento) {
 
     const id = Date.now();
 
-    try {
-        conectaApi.criarProduto().then(produtos => {
-            if(produtos.legth === 0){
-                location.reload();
-            }else {
-                lista.innerHTML = ``;
-                produtos.reverse();
-                produtos.forEach(elemento => lista.appendChild(constroiCard(novoProduto.id, novoProduto.nome, novoProduto.valor, novoProduto.imagem)))
-            }
-        })
+    conectaApi.criarProduto().the(produtos => {
+        if(produtos.legth === 0){
+            location.reload();
+        }else {
+            lista.innerHTML = ``;
+            produtos.reverse();
+             produtos.forEach(elemento=> lista.appendChil(constroiCard(novoProdutoid, novoProduto.nome,novoProduto.valor,novoProduto.imagem)))
+        }
+    })
     } catch (error) {
         console.error("Erro ao criar card do produto:", error);
     }
