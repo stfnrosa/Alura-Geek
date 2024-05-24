@@ -1,24 +1,33 @@
 // const host = "http://localhost:3000";
 const host = "https://api-produtos-seven.vercel.app"
 
-// Função usada para listar os produtos da API
 async function listaProdutos() {
     const conexao = await fetch(`${host}/produtos`);
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
 
-async function criarProduto(produto) {
-    const response = await fetch(`${host}/productos`, {
-        method: 'POST',
+async function criarProduto(id, nome, valor, imagem) {
+    const conexao = await fetch(`${host}/produtos`, { // Corrigido o template literal
+        method: "POST",
         headers: {
-            'Content-Type': 'application/json',
+            "Content-type": "application/json"
         },
-        body: JSON.stringify(produto)
+        body: JSON.stringify({
+            id: id,
+            nome: nome,
+            valor: valor,
+            imagem: imagem
+        })
     });
-    return response;
-}
 
+    if (!conexao.ok) {
+        throw new Error(`Erro na requisição: ${conexao.statusText}`);
+    }
+
+    const conexaoConvertida = await conexao.json();
+    return conexaoConvertida;
+}
 
 async function atualizaProduto(id, newData) {
     const response = await fetch(`${host}/produtos/${id}`, { // Corrigido o template literal
