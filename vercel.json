@@ -1,21 +1,18 @@
 {
-  "functions": {
-    "api/server.js": {
-      "includeFiles": "db.json"
+  "version": 2,
+  "builds": [
+    {
+      "src": "/api/server.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["api/db.json"]
+      }
     }
-  },
-  "rewrites": [
+  ],
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "api/server.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://alura-geek-inky-sigma.vercel.app/"
-    },
-    {
-      "source": "/produtos/(.*)",
-      "destination": "api/server.js"
+      "src": "/(.*)",
+      "dest": "/api/server.js"
     }
   ]
 }
