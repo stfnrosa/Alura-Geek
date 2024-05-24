@@ -8,26 +8,15 @@ async function listaProdutos() {
     return conexaoConvertida;
 }
 
-async function criarProduto(id, nome, valor, imagem) {
-    const conexao = await fetch(`${host}/produtos`, { 
-        method: "POST",
+async function criarProduto(produto) {
+    const response = await fetch(`${host}/productos`, {
+        method: 'POST',
         headers: {
-            "Content-type": "application/json"
+            'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-            id: id,
-            nome: nome,
-            valor: valor,
-            imagem: imagem
-        })
+        body: JSON.stringify(produto)
     });
-
-    if (!conexao.ok) {
-        throw new Error(`Erro na requisição: ${conexao.statusText}`);
-    }
-
-    const conexaoConvertida = await conexao.json();
-    return conexaoConvertida;
+    return response;
 }
 
 

@@ -27,7 +27,11 @@ async function criarCardProduto(evento) {
     }
 }
 
-formulario.addEventListener("submit", criarCardProduto);
+formulario.addEventListener("submit", conectaApi.criarProduto({
+    nome: nome,
+    valor: valor,
+    imagem:imagem
+}));
 
 function constroiCard(id, nome, valor, imagem) {
     const card = document.createElement("li");
