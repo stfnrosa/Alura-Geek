@@ -1,6 +1,8 @@
+const host = "https://alura-geek-flax.vercel.app"
+
 //função usada para listar os produtos da API
 async function listaProdutos() {
-    const conexao = await fetch('http://localhost:3000/produtos');
+    const conexao = await fetch(`{${host}/produtos`);
     //converte o resultado da requisição para JSON
     const conexaoConvertida = await conexao.json();
     //retorna o array de produtos da Api
@@ -8,7 +10,7 @@ async function listaProdutos() {
 }
 
 async function criarProduto(id, nome, valor, imagem) {
-    const conexao = await fetch('http://localhost:3000/produtos', {
+    const conexao = await fetch(`{${host}/produtos`, {
         method: "POST",
         //indica que o corpo da requisição está no formato JSON
         headers: {
@@ -35,7 +37,7 @@ async function criarProduto(id, nome, valor, imagem) {
 }
 
 async function atualizaProduto(id, newData) {
-    const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+    const response = await fetch(`{${host}/produtos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -45,9 +47,17 @@ async function atualizaProduto(id, newData) {
     return response;
 }
 
+async function deleteProduto(id) {  
+    const response = await fetch(`{${host}/produtos/${id}}`, {
+        method: 'DELETE',
+    });
+    return response;
+}
+
 //exporta funções definidas
 export const conectaApi = {
     listaProdutos,
     criarProduto,
-    atualizaProduto
+    atualizaProduto,
+    deleteProduto
 }

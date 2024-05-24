@@ -1,0 +1,18 @@
+{
+    "functions": {
+      "api/server.js": {
+        "includeFiles": "db.json"
+      }
+    },
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/api/server.js"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "https://alura-geek-flax.vercel.app/"
+      }
+    ]
+  }
+  
