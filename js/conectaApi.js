@@ -14,7 +14,8 @@ async function criarProduto(id, nome, valor, imagem) {
         headers: {
             "Content-type": "application/json"
         },
-        body: JSON.stringify(id, {
+        body: JSON.stringify({
+            id: id,
             nome: nome,
             valor: valor,
             imagem: imagem
@@ -28,6 +29,7 @@ async function criarProduto(id, nome, valor, imagem) {
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
+
 
 async function atualizaProduto(id, newData) {
     const response = await fetch(`${host}/produtos/${id}`, { // Corrigido o template literal
