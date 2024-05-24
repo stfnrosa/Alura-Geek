@@ -2,8 +2,9 @@ import { conectaApi } from "./conectaApi.js";
 import verificaValor from "./verificaValor.js";
 
 const formulario = document.querySelector("[data-formulario]");
+const lista = document.querySelector("[card-list]");
 
-async function criarCardProduto(evento) {
+function criarCardProduto(evento) {
     evento.preventDefault();
 
     const nome = document.querySelector("[data-nome]").value;
@@ -14,8 +15,15 @@ async function criarCardProduto(evento) {
     const id = Date.now();
 
     try {
-        const novoProduto = await conectaApi.criarProduto(id, nome, valor, imagem);
-        document.querySelector("[data-lista]").appendChild(constroiCard(novoProduto.id, novoProduto.nome, novoProduto.valor, novoProduto.imagem));
+        conectaApi.criarProduto().then(produtos => {
+            if(produtos.legth === 0){
+                location.reload();
+            }else {
+                lista.innerHTML = ``;
+                produtos.reverse();
+                produtos.forEach(elemento => lista.appendChild(constroiCard(novoProduto.id, novoProduto.nome, novoProduto.valor, novoProduto.imagem)))
+            }
+        })
     } catch (error) {
         console.error("Erro ao criar card do produto:", error);
     }
