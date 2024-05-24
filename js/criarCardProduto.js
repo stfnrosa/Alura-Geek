@@ -11,10 +11,11 @@ async function criarCardProduto(evento) {
     const imagem = document.querySelector("[data-imagem]").value;
     const valor = verificaValor(valorCampo);
 
-    const ultimoId = produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) : 0;
-    const novoId = ultimoId + 1;
-
     try {
+        const produtos = await conectaApi.listaProdutos();
+        const ultimoId = produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) : 0;
+        const id = ultimoId + 1;
+        
         const novoProduto = await conectaApi.criarProduto(id, nome, valor, imagem);
         document.querySelector("[data-lista]").appendChild(constroiCard(novoProduto.id, novoProduto.nome, novoProduto.valor, novoProduto.imagem));
     } catch (error) {
