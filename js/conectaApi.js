@@ -1,6 +1,7 @@
 // const host = "http://localhost:3000";
 const host = "https://api-produtos-seven.vercel.app"
 
+// Função usada para listar os produtos da API
 async function listaProdutos() {
     const conexao = await fetch(`${host}/produtos`);
     const conexaoConvertida = await conexao.json();
@@ -8,7 +9,7 @@ async function listaProdutos() {
 }
 
 async function criarProduto(id, nome, valor, imagem) {
-    const conexao = await fetch(`${host}/produtos`, { // Corrigido o template literal
+    const conexao = await fetch(`${host}/produtos`, { 
         method: "POST",
         headers: {
             "Content-type": "application/json"
