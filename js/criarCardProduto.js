@@ -12,7 +12,7 @@ async function criarCardProduto(evento) {
     const valor = verificaValor(valorCampo);
 
     const ultimoId = produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) : 0;
-    const novoId = ultimoId + 1;
+    const id = ultimoId + 1;
 
     try {
         const novoProduto = await conectaApi.criarProduto(id, nome, valor, imagem);
