@@ -2,7 +2,7 @@ const host = "https://alura-geek-inky-sigma.vercel.app"
 
 //função usada para listar os produtos da API
 async function listaProdutos() {
-    const conexao = await fetch(`{${host}/produtos`);
+    const conexao = await fetch(`${host}/produtos`);
     //converte o resultado da requisição para JSON
     const conexaoConvertida = await conexao.json();
     //retorna o array de produtos da Api
