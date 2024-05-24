@@ -1,22 +1,19 @@
+// const host = "http://localhost:3000";
 const host = "https://alura-geek-inky-sigma.vercel.app"
 
-//função usada para listar os produtos da API
+// Função usada para listar os produtos da API
 async function listaProdutos() {
     const conexao = await fetch(`${host}/produtos`);
-    //converte o resultado da requisição para JSON
     const conexaoConvertida = await conexao.json();
-    //retorna o array de produtos da Api
     return conexaoConvertida;
 }
 
 async function criarProduto(id, nome, valor, imagem) {
-    const conexao = await fetch(`{${host}/produtos`, {
+    const conexao = await fetch(`${host}/produtos`, { // Corrigido o template literal
         method: "POST",
-        //indica que o corpo da requisição está no formato JSON
         headers: {
             "Content-type": "application/json"
         },
-        //converte todos os dados em uma string JSON
         body: JSON.stringify({
             id: id,
             nome: nome,
@@ -25,39 +22,46 @@ async function criarProduto(id, nome, valor, imagem) {
         })
     });
 
-    //verifica se a requisição foi bem sucedida
     if (!conexao.ok) {
         throw new Error(`Erro na requisição: ${conexao.statusText}`);
     }
 
-    //converte o resultado da requisição para JSON
     const conexaoConvertida = await conexao.json();
-    //retorna o produti criado em JSON
     return conexaoConvertida;
 }
 
 async function atualizaProduto(id, newData) {
-    const response = await fetch(`{${host}/produtos/${id}`, {
+    const response = await fetch(`${host}/produtos/${id}`, { // Corrigido o template literal
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(newData),
     });
-    return response;
+
+    if (!response.ok) {
+        throw new Error(`Erro na requisição: ${response.statusText}`);
+    }
+
+    const conexaoConvertida = await response.json();
+    return conexaoConvertida;
 }
 
-async function deleteProduto(id) {  
-    const response = await fetch(`{${host}/produtos/${id}}`, {
+async function deleteProduto(id) {
+    const response = await fetch(`${host}/produtos/${id}`, { // Corrigido o template literal
         method: 'DELETE',
     });
+
+    if (!response.ok) {
+        throw new Error(`Erro na requisição: ${response.statusText}`);
+    }
+
     return response;
 }
 
-//exporta funções definidas
 export const conectaApi = {
     listaProdutos,
     criarProduto,
     atualizaProduto,
     deleteProduto
-}
+};

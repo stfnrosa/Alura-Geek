@@ -18,8 +18,9 @@ async function criarCardProduto(evento) {
         document.querySelector("[data-lista]").appendChild(constroiCard(novoProduto.id, novoProduto.nome, novoProduto.valor, novoProduto.imagem));
     } catch (error) {
         console.error("Erro ao criar card do produto:", error);
-    } 
+    }
 }
-   
+
 formulario.addEventListener("submit", criarCardProduto);
+
 
