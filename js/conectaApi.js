@@ -14,8 +14,7 @@ async function criarProduto(id, nome, valor, imagem) {
         headers: {
             "Content-type": "application/json"
         },
-        body: JSON.stringify({
-            id: id,
+        body: JSON.stringify(id, {
             nome: nome,
             valor: valor,
             imagem: imagem
